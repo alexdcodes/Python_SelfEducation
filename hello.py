@@ -1,6 +1,5 @@
 # Just a simple application to do some calculations for me
 # pings google.
-# open source i guess i mean edit it as you please
 
 from datetime import datetime
 import os
