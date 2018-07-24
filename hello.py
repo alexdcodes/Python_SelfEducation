@@ -61,7 +61,7 @@ def input_number(message):
 
 def message_calculations():
     if updated_number < number or updated_number == number:
-        return "\nWtf..\nyou entered in the wrong number in the wrong location, or no new messages got sent.."
+        return "\nWtf..\nyou entered in the wrong number in the wrong location, or no new info got sent.."
     else:
         lolcount = updated_number - number
     print("\n [", user, "Information Statistics ]")
