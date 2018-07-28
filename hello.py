@@ -58,7 +58,7 @@ def input_number(message):
 # Message and display the information back to the user
 
 
-def message_calculations():
+def m_calculations():
     if updated_number < number or updated_number == number:
         return "\nWtf..\nyou entered in the wrong number in the wrong location, or no new info got sent.."
     else:
@@ -90,7 +90,7 @@ updated_number = input_number("> How many apples did you buy?: ")
 number = input_number("> How many apples did you eat?: ")
 log_text = updated_number - number
 
-print(message_calculations())
+print(m_calculations())
 
 print("\n>> Results will be stored in log.txt [in the application directory] " + dir_path)
 print("\n This is typically the default folder the .py file is being executed from.")
