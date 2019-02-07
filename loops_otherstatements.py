@@ -53,3 +53,17 @@ def while_loop():
 
 
 while_loop()
+
+
+# Keyword Parameters and Defaults
+
+def hello_1(greeting, name):
+    print '%s, %s!' % (greeting,name)
+
+
+def hello_2(name, greeting):
+    print '%s, %s!' % (name,greeting)
+
+
+hello_1('Hello', 'World')
+hello_2('Hello', 'world')
