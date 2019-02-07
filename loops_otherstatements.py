@@ -41,3 +41,15 @@ def boolean_operators():
 
 
 boolean_operators()
+
+
+# Loop 1 - 100
+def while_loop():
+
+    x = 1
+    while x <= 100:
+        print x
+        x += 1
+
+
+while_loop()
