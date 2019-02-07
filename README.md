@@ -5,4 +5,4 @@ two different playgrounds
 
 Hello and Printing.py
 
-both python files can be launched seperatly. 
+Each python file(s) can be launched seperatly. As each is a different lesson. 
