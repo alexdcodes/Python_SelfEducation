@@ -17,39 +17,6 @@ print "The temperature is " + temp
 print '''\n THIS IS A JUST A TESTING APPLICATION FOR EDUCATION NOTHING MORE, .
 .. EXAMPLE OF A VERY LONG STRING PROGRAM IN PYTHON'''
 
-months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-    "October",
-    "November",
-]
-
-years = [
-    "1984",
-    "1985",
-    "1986",
-    "1987",
-    "1988",
-    "1989",
-    "1990",
-    "1991",
-    "1992",
-    "1993",
-    "1994",
-    "1995",
-    "1996",
-    "1997",
-]
 
 endings = ['st', 'nd', 'rd'] + 17 * ['th'] \
         + ['st', 'nd', 'rd'] + 7 * ['th'] \
