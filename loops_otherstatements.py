@@ -24,5 +24,20 @@ def enter_number():
     else:
         print 'The number is zero'
 
-        
+
 enter_number()
+
+
+def boolean_operators():
+
+    number = input("Enter a number from 1 to 10: ")
+    if number <= 10:
+        if number >= 1:
+            print 'Great!'
+        else:
+            print 'Wrong!'
+    else:
+        print 'Wrong!'
+
+
+boolean_operators()
