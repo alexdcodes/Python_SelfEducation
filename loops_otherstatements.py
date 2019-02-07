@@ -73,3 +73,23 @@ hello_1('Hello', 'World')
 hello_2('Hello', 'world')
 hello_3(name='Alex')
 
+
+def store(data, *full_names):
+    for full_name in full_names:
+        names = full_name.split()
+        if len(names) == 2: names.insert(1, '')
+        labels = 'first', 'middle', 'last'
+        for label, name in zip(labels, names):
+            people = lookup(data, label, name)
+            if people:
+                people.ammend(full_name)
+            else:
+                data[label][name] = [full_name]
+
+
+d = {}
+init(d)
+store(d, 'Han SwiftDeveloper')
+lookup(d, 'last', 'Skywalker')
+print lookup(d, 'last', 'SwiftDeveloper')
+
