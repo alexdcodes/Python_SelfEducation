@@ -30,7 +30,7 @@ seq.sort()
 print seq
 print search(seq, 34)
 
-# PolyMorphism
+# Polymorphism
 
 
 def add(x, y):
