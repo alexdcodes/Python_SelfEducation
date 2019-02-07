@@ -65,5 +65,11 @@ def hello_2(name, greeting):
     print '%s, %s!' % (name,greeting)
 
 
+def hello_3(greeting='Hello', name='world'):
+    print '%s, %s!' % (greeting,name)
+
+
 hello_1('Hello', 'World')
 hello_2('Hello', 'world')
+hello_3(name='Alex')
+
