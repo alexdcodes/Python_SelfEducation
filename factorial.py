@@ -29,3 +29,13 @@ seq = [34, 67, 8, 123, 4, 100, 95]
 seq.sort()
 print seq
 print search(seq, 34)
+
+# PolyMorphism
+
+
+def add(x, y):
+    return x+y
+
+
+print add(1, 2)
+print add('Fish', 'license')
