@@ -18,5 +18,5 @@ database.extend(database_two)
 username = raw_input('Username: ')
 pin = raw_input('PIN Code: ')
 
-if [username, pin ] in database: print 'Access Granted!'
-if [username, pin ] not in database: print "Denied"
+if [username, pin] in database: print 'Access Granted!'
+if [username, pin] not in database: print "Denied"
