@@ -1,4 +1,5 @@
-__metaclass__ = type # Make sure we get new style classes
+__metaclass__ = type
+# Make sure we get new style classes
 
 
 class Person:
@@ -29,7 +30,7 @@ class Animal:
 
 # Lets add privacy so we cannot modify the property from the outside
 
-# We will add two underscores to kinda show that this class should not be accessed, also attempt to hide it. 
+# We will add two underscores to kinda show that this class should not be accessed, also attempt to hide it.
 
 class Secretive:
 
@@ -39,6 +40,19 @@ class Secretive:
     def accessible(self):
         print "The secret message is:"
         self.__inaccessible()
+
+
+class MemberCounter:
+    members = 0
+
+    def init(self):
+        MemberCounter.members += 1
+
+
+class Filter:
+    def init(self):
+        self.blocked = []
+
 
 s = Secretive()
 foo = Person()
