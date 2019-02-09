@@ -27,6 +27,18 @@ class Animal:
         print self.sound
 
 
+# Lets add privacy so we cannot modify the property from the outside
+
+class Secretive:
+
+    def __inaccessible(self):
+        print "Hidden class just shown by underscores. Can still be accessed in python of course.."
+
+    def accessible(self):
+        print "The secret message is:"
+        self.__inaccessible()
+
+s = Secretive()
 foo = Person()
 bar = Person()
 foo.setName('Luke Skywalker')
