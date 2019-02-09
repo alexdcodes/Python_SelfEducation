@@ -29,6 +29,8 @@ class Animal:
 
 # Lets add privacy so we cannot modify the property from the outside
 
+# We will add two underscores to kinda show that this class should not be accessed, also attempt to hide it. 
+
 class Secretive:
 
     def __inaccessible(self):
