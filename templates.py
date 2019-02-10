@@ -24,3 +24,11 @@ def replacement(match):
         return ''
 
 # Get all the text as a single string:
+# (There are other ways of doing this; see chapter 11)
+
+
+lines = []
+
+for line in fileinput.input():
+    lines.append(line)
+text = ''.join(lines)
