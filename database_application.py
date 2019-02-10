@@ -42,6 +42,7 @@ def enter_command():
     cmd = cmd.strip().lower()
     return cmd
 
+
 def main():
     database = shelve.open('C:\\random_data.dat')    # You may want to change this name
     try:
