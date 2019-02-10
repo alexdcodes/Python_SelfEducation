@@ -9,6 +9,7 @@ def checkIndex(key):
     if not isinstance(key, (int, long)): raise TypeError
     if key<0: raise IndexError
 
+
 class ArithmeticSequence:
     def __init__(self, start=0, step=1):
         """
