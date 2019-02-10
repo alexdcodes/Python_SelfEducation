@@ -53,8 +53,22 @@ class Filter:
     def init(self):
         self.blocked = []
 
+    def filter(self, sequence):
+        return [x for x in sequence if x not in self.blocked]
 
-s = Secretive()
+
+class SPAMFilter(Filter): # SPAMFilter is a subclass of Filter
+    def init(self): # Overrides init methods from Filter superclass
+        self.blocked = ['SPAM']
+
+
+f = Filter()
+f.init()
+f.filter([1,2,3])
+s = SPAMFilter()
+isinstance(s, SPAMFilter)
+s.init()
+s.filter(['SPAM', 'SPAM', 'SPAM', 'SPAM', 'eggs', 'bacon', 'SPAM'])
 foo = Person()
 bar = Person()
 foo.setName('Luke Skywalker')
