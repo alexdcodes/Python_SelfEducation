@@ -19,9 +19,6 @@ class ArithmeticSequence:
         step - the difference between two adjacent values
         changed - a dictionary of values that has been modified by the user
        """
-    self.start = start
-    self.step = step
-    self.changed = {}
 
 
 def __getitem__(self, key):
@@ -41,4 +38,18 @@ def __setitem__(self, key, value):
     """
     checkIndex(self)
 
-    self.changed[key] = value               # store changed value 
+    self.changed[key] = value               # store changed value
+
+
+class CounterList(list):
+    def __init__(self, *args):
+        super(CounterList, self).__init__(*args)
+        self.counter = 0
+
+    def __getitem__(self, index):
+        self.counter += 1
+        return super(CounterList, self).__getitem__(index)
+
+
+cl = CounterList(range(10))
+print cl
