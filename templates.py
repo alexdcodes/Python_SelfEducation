@@ -32,3 +32,8 @@ lines = []
 for line in fileinput.input():
     lines.append(line)
 text = ''.join(lines)
+
+f = open(r'test.txt')
+f.write('Hello, ')
+f.write('World! ')
+f.close()
