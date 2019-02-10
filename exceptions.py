@@ -9,7 +9,7 @@ class MuffledCalculator:
             return eval(expr)
         except ZeroDivsionError:
             if self.muffled:
-                print "Division by zero is illegal"
+                print "Division by zero is denied"
             else:
                 raise
 
