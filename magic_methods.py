@@ -1,5 +1,7 @@
 # Before: you should either put the assignment __metaclass__ = type at the top of your modules
 
+__metaclass__ = type
+
 
 class FooBar:
     def __init__(self):
