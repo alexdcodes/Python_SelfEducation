@@ -1,13 +1,18 @@
+__metaclass__ = type
+
+
 class Rectangle:
     def __init__(self):
         self.width = 0
         self.height = 0
 
-    def setSize(self, size):
+    def setsize(self, size):
         self.width, self.height = size
 
-    def getSize(self):
+    def getsize(self):
         return self.width, self.height
+    size = property(getsize, setsize)
+
 
 r = Rectangle()
 r.width = 10
