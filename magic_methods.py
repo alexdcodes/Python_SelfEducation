@@ -18,8 +18,18 @@ class Bird:
             print 'No, thanks!'
 
 
+class BarkDog(Bird):
+    def __init__(self):
+        self.sound = 'Woof'
+
+    def sing(self):
+        print self.sound
+
+
 f = FooBar()
 b = Bird()
+sb = BarkDog()
+print sb.sing()
 print f.somevar
 print b.eat()
 print b.eat()
