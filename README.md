@@ -1,4 +1,4 @@
-# exercises_python
+# Exercises_Python
 
 # Python from Novice to Professional 
 
