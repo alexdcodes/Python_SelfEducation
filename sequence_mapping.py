@@ -33,3 +33,12 @@ def __getitem__(self, key):
     try: return self.changed[key]            # modified
     except KeyError:                         # otherwise.....
         return self.start + key*self.step    # calculate the value
+
+
+def __setitem__(self, key, value):
+    """
+    Change an item in the arithmetic sequence
+    """
+    checkIndex(self)
+
+    self.changed[key] = value               # store changed value 
