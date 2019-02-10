@@ -13,7 +13,7 @@ def checkIndex(key):
 class ArithmeticSequence:
     def __init__(self, start=0, step=1):
         """
-        Initalize the arthmetic sequence.
+        Initialize the arithmetic sequence.
 
         start - the first value in the sequence
         step - the difference between two adjacent values
