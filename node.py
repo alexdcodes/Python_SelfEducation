@@ -5,6 +5,16 @@ from urlparse import urlparse
 import sys
 
 MAX_HISTORY_LENGTH = 4
+OK = 1
+FAIL = 2
+EMPTY = ''
+
+
+def getPort(url):
+    name = urlparse(url):[1]
+    parts = name.split(':')
+    return int(parts[-1])
+
 
 class Node:
 
